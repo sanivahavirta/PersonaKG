@@ -37,10 +37,21 @@ The following table provides an overview of the key files in the Persona KG proj
 
 ## Outputs
 
-- **Graph Database**: Stored in Neo4j
-- **Predictions**: Saved in JSON with prompt, target, and output
-- **Stats**: CSV outputs for attribute similarity and sharing patterns
-- **Tests**: Normality and significance analysis scripts for evaluation metrics
+This section outlines what is generated when running the key scripts in this project:
+
+### From `construct_kg.py`:
+- **Neo4j Graph Database**: Stores all persona nodes and their structured attributes in a graph format.
+- **Canonicalized JSON File**: A saved file in `graphs/` containing canonicalized persona data with the schema used (`canonized_results_<schema_hash>.json`).
+- **Log Messages**: Output to the console indicating progress, skipped duplicates, and any errors.
+
+### From `run_exp.py`:
+- **Prediction Results File**: A JSON file in `results/`, named like `results_<experiment_id>.json`, containing:
+  - The generated predictions
+  - Corresponding prompts, targets, and model responses
+- **Evaluation Metrics File**: A JSON file named `eval_<experiment_id>.json`, with BLEU and ROUGE scores.
+- **Checkpoint Files**: Intermediate progress files (`checkpoint_<experiment_id>.json`) that allow experiment recovery.
+
+These outputs are critical for validating and comparing models with and without the use of a knowledge graph.
 
 ---
 
@@ -56,7 +67,7 @@ The following table provides an overview of the key files in the Persona KG proj
 To run an experiment with KG support:
 
 ```bash
-python run_exp.py --knowledge_graph graphs/my_schema.json
+python run_exp.py --knowledge_graph graphs/canonized_results_<schema_has>.json
 ```
 
 To build the KG from scratch:
@@ -64,18 +75,11 @@ To build the KG from scratch:
 ```bash
 python construct_kg.py
 ```
-
-To test evaluation metrics:
-
-```bash
-python significance_test.py results/with_KG.json results/without_KG.json --metric rougeL
-```
-
 ---
 
 ## Notes
 
-- Schema configuration in `construct_kg.py` is customizable
+- Schema configuration in `construct_kg.py` is customizable, and both the KG construction and experiment scripts can be run either on the full dataset or on a fixed sample subset, depending on the configuration set in the code
 - Canonicalization ensures consistency in attribute naming
 - The LLM interface allows flexible model backend integration
 
