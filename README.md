@@ -1,7 +1,3 @@
-Persona Knowledge Graph (KG) Project
-
-This repository supports the construction, analysis, and evaluation of a persona knowledge graph (KG) to enhance LLM-driven dialogue systems with a graph-base RAG approach. The system leverages Neo4j, LLMs, BLEU/ROUGE evaluation, and prompt engineering for graph population and next utterance prediction taks.
-
 # Persona Knowledge Graph (KG) Project
 
 This repository supports the construction, analysis, and evaluation of a **Persona Knowledge Graph** to enhance LLM-driven dialogue systems by integrating structured persona data. The system leverages **Neo4j**, **LLMs**, **BLEU/ROUGE evaluation**, and prompt engineering for next utterance prediction.
