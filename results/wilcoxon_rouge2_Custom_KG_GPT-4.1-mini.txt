@@ -1,0 +1,8 @@
+Checkpoint A: checkpoint_experiment26_with_KG.json
+Checkpoint B: checkpoint_experiment26_without_KG.json
+Metric: rouge2
+Samples: 4996
+Mean rouge2 A: 0.092454
+Mean rouge2 B: 0.093915
+Wilcoxon statistic: 1797212.0
+p-value: 0.020162

@@ -1,0 +1,11 @@
+category,total_attributes,similar_attributes,similarity_percentage,similar_pairs
+additionalAttributes,366,88,24.0,97
+aspirationsAndGoals,409,196,47.9,252
+familyRelationships,663,504,76.0,1156
+favoritesAndPreferences,1189,912,76.7,1327
+healthAndDisabilities,206,52,25.2,73
+hobbiesAndInterests,1553,1089,70.1,1503
+lifestyleAndHabits,709,295,41.6,278
+personalityTraitsAndEmotions,491,155,31.6,126
+pets,169,133,78.7,364
+OVERALL,5755,3424,59.5,5176

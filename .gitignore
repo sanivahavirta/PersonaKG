@@ -1,0 +1,8 @@
+__pycache__
+
+*.slurm
+*.err
+*.out
+.DS_Store
+
+datasets/"old_results/" 

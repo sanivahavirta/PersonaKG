@@ -1,0 +1,8 @@
+Checkpoint A: checkpoint_experiment28_with_KG_PeaCoK.json
+Checkpoint B: checkpoint_experiment26_without_KG.json
+Metric: bleu
+Samples: 4996
+Mean bleu A: 0.031480
+Mean bleu B: 0.026157
+Wilcoxon statistic: 118850.0
+p-value: 0.000013

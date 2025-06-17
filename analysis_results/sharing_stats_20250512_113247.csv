@@ -1,0 +1,11 @@
+category,total_attributes,unique_attributes,unique_percentage,shared_attributes,shared_percentage,personas_without_attributes,personas_without_percentage,most_shared_count,avg_sharing
+additionalAttributes,366,205,56.0,161,44.0,3362,84.0,24,2.2
+aspirationsAndGoals,409,172,42.1,237,57.9,3148,78.6,11,2.5
+demographics,1144,369,32.3,775,67.7,979,24.5,625,6.8
+familyRelationships,663,232,35.0,431,65.0,2232,55.7,61,3.8
+favoritesAndPreferences,1189,510,42.9,679,57.1,1606,40.1,71,3.0
+healthAndDisabilities,206,51,24.8,155,75.2,3279,81.9,51,4.2
+hobbiesAndInterests,1553,626,40.3,927,59.7,642,16.0,191,4.2
+lifestyleAndHabits,709,350,49.4,359,50.6,2748,68.6,42,2.2
+personalityTraitsAndEmotions,491,190,38.7,301,61.3,2889,72.2,28,3.0
+pets,169,41,24.3,128,75.7,3285,82.0,116,5.1
